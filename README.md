@@ -1,4 +1,4 @@
-# Homelab Solutions Wiki
+# Homelab Solutions
 
 A wiki for self-hosted solutions, fixes, useful extensions & custom builds. Real problems, tested solutions — no guesswork.
 
