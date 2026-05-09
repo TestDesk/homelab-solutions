@@ -10,6 +10,7 @@ Documentation is organized by platform and topic in a directory structure. Some 
 
 You can either browse the directories directly or use the wiki, which links to all documents.
 
+### Example
 ```
 yunohost/
 └── apps/
