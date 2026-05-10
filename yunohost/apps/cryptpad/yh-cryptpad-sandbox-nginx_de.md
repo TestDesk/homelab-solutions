@@ -295,6 +295,7 @@ Description=Check and restore CryptPad sandbox nginx config
 Type=oneshot
 ExecStart=/bin/bash -c 'grep -q "listen 443" /etc/nginx/conf.d/sandbox.cryptpad.beispiel.de.conf || (bash /usr/share/yunohost/hooks/conf_regen/99-nginx_sandbox_cryptpad post nginx && systemctl reload nginx)'
 ```
+> **Hinweis:** `sandbox.cryptpad.beispiel.de` durch die eigene Domain aus Schritt 2 ersetzen.
 
 Speichern: `Ctrl+O` → `Enter` → `Ctrl+X`
 
