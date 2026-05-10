@@ -58,7 +58,13 @@ Das YunoHost-Installationspaket erstellt zwar eine nginx-Template-Datei für die
 - Hat `sandbox.cryptpad.beispiel.de` **keinen HTTPS-Server-Block** → Dokumente können nicht geladen werden
 - Hat `sandbox.cryptpad.beispiel.de` **keinen Port-80-Server-Block** mit ACME-Challenge → Let's Encrypt kann die Domain nicht verifizieren → Zertifikat-Renewal schlägt fehl
 
-Zusätzliches Problem: Wenn in YunoHost eine Domain angelegt oder gelöscht wird, führt YunoHost automatisch `regen-conf` aus und lädt nginx danach neu – dabei wird die manuell erstellte Sandbox-Config überschrieben. Ein systemd-Timer überwacht deshalb alle 30 Sekunden ob die Config korrekt ist und stellt sie automatisch wieder her.
+Die manuell erstellte Sandbox-Config wird in drei Situationen überschrieben oder fehlt:
+
+1. Direkt nach der Installation – die Config wird nie erstellt
+2. Nach jedem Reboot – die Config fehlt beim Systemstart
+3. Nach Domain-Aktionen in YunoHost (Domain anlegen, löschen, Zertifikat erneuern) – YunoHost führt dabei `regen-conf` aus und lädt nginx mehrfach neu
+
+Ein systemd-Timer überwacht deshalb alle 30 Sekunden ob die Config korrekt ist und stellt sie automatisch wieder her.
 
 ---
 
