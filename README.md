@@ -11,4 +11,4 @@ Documentation is organized by platform and topic in a directory structure. Some 
 ### YunoHost Apps
 |Name|Description|Link|
 |---|-|-|
-|Cryptpad|Sandbox Domain Fix - Certificate renewal fails, documents stuck on "Loading", backups fail|[EN](CryptPad-on-YunoHost-‐-Sandbox-Domain-nginx-Fix) • [DE](CryptPad-on-YunoHost-‐-Sandbox-Domain-nginx-Fix-‐-DE)|
+|Cryptpad|Sandbox Domain nginx Fix|[EN]([CryptPad-on-YunoHost-‐-Sandbox-Domain-nginx-Fix](https://github.com/TestDesk/homelab-solutions/blob/463c25d17d8cc7d64b163607786f140f5ea9905d/yunohost/apps/cryptpad/yh-cryptpad-sandbox-nginx.md)) • [DE]([CryptPad-on-YunoHost-‐-Sandbox-Domain-nginx-Fix-‐-DE](https://github.com/TestDesk/homelab-solutions/blob/463c25d17d8cc7d64b163607786f140f5ea9905d/yunohost/apps/cryptpad/yh-cryptpad-sandbox-nginx_de.md))|
