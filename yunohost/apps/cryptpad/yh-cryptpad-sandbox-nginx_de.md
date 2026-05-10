@@ -1,4 +1,4 @@
-# CryptPad auf YunoHost: Sandbox-Domain Fix
+# CryptPad auf YunoHost: Sandbox-Domain nginx Fix
 
 **Version:** Mai 2026  
 **YunoHost:** 12.1.39 (stable)  
